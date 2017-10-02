@@ -6,6 +6,28 @@ $obj->printthis($text);
         
 $array = array(1,2,3,4,5,6,7);
 $obj->printArray($array);
+$obj -> array_sum();
+$obj -> areverse($array);
+$obj -> length($text);
+$obj -> ssplit($text);
+$obj -> scount($text);
+$obj -> compare();
+$obj -> replace();
+$obj -> strim();
+$obj -> srev($text);
+$obj -> sbinhex($text);
+$obj -> sub();
+$obj -> acount($array);
+$obj-> adiff();
+$obj-> amerge();
+$obj->amultisort($array);
+$obj->aintersect();
+$obj->apush($array);
+$obj->apop($array);
+
+
+
+
 class main{ 
 public function __construct() {
 
@@ -20,16 +42,19 @@ public function printthis($text) {
 	}
 
 public function length($text){
+echo '<h1>length of an array </h1>';
 echo strlen($text);
 echo '<hr>';
 }
 
 public function ssplit($text){
+echo '<h1>splitting an array  </h1>';
 print_r(str_split($text));
 echo '<hr>';
 }
 
 public function scount($text){
+echo '<h1>word count </h1>';
 echo str_word_count($text);
 echo '<hr>';
 }
@@ -126,15 +151,17 @@ echo '<hr>';
 }
 
 public function areverse($array){
+echo '<h1>reversing the elements of an array </h1>';
 print_r(array_reverse($array));
 echo '<hr>';
 
 }
 
-public function asum($array){
-echo array_sum($array);
+public function array_sum(){
+echo '<h1>sum </h1>';
+$a = array(10,20,30);
+echo "The sum is: " . array_sum($a);
 echo '<hr>';
-
 }
 
 public function __destruct() {
